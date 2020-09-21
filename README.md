@@ -44,7 +44,7 @@ ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
 ```
 <img src="Figures/scatter_rainbow_morebins.png" alt="scatter_rainbow_morebins" width="600"/>
 
-The legend is kind of hard to interpret (it's just the number of points in a given bin), so I usually adjust it to be more readable.
+The legend is kind of hard to interpret (it's a value from the kernel density function), so I usually adjust it to be more readable.
 ```r
 ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
    scale_color_gradientn(colors = rev(rainbow(5)),
