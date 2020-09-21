@@ -59,4 +59,4 @@ ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
                          labels = c('Low', 'High'),
                          name   = 'Point density')
 ```
-<img src="Figures/scatter_rainbow_morebins.png" alt="scatter_rainbow_morebins_legend" width="600"/>
+<img src="Figures/scatter_rainbow_morebins.png" alt="scatter_rainbow_morebins_legend_kernel" width="600"/>
