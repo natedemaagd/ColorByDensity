@@ -26,7 +26,7 @@ ggplot(data = dat) + geom_point(aes(x,y), alpha = 0.5)
 ```
 <img src="Figures/scatter_alpha.png" alt="scatter" width="600"/>
 
-This helps a little, but the density of the points can still be made more clear by instead coloring them by density.
+This helps a little, but the point overlap can still be made more clear by instead coloring them by density.
 ```r
 dat$density <- get_point_density(dat$x, dat$y)
 
