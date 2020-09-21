@@ -1,4 +1,4 @@
-Package: scatterplot.point.density
+Package: ColorByDensity
 Type: Package
 Title: Color scatterplot points by their density
 Version: 0.1.0

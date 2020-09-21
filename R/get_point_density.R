@@ -7,7 +7,7 @@
 #' @examples
 #'
 #' # load packages
-#' library(ggplot2); library(scatterplot.point.density)
+#' library(ggplot2); library(ColorByDensity)
 #'
 #' # create sample data.frame
 #' dat <- data.frame(x = runif(n = 2000), y = runif(n=2000) + rnorm(n=2000))
