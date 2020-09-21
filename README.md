@@ -23,17 +23,20 @@ ggplot(data = dat) + geom_point(aes(x,y), alpha = 0.5)
 This helps a little, but the density of the points can still be made more clear by instead coloring them by density.
 ```r
 dat$density <- get_point_density(dat$x, dat$y)
-ggplot(data = dat) + geom_point(aes(x, y, color = density)) + scale_color_gradientn(colors = rev(rainbow(5)))
+ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
+   scale_color_gradientn(colors = rev(rainbow(5)))
 ```
 Now you can see the density much more clearly, but the colors are "boxy". To fix this, we can increase the number of bins to make the color gradient more smooth. This is done by specifying the `n` parameter.
 ```r
 dat$density <- get_point_density(dat$x, dat$y, n = 100)
-ggplot(data = dat) + geom_point(aes(x, y, color = density)) + scale_color_gradientn(colors = rev(rainbow(5)))
+ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
+   scale_color_gradientn(colors = rev(rainbow(5)))
 ```
 The legend is kind of hard to interpret (it's just the number of points in a given bin), so I usually adjust it to be more readable.
 ```r
-ggplot(data = dat) + geom_point(aes(x, y, color = density)) + scale_color_gradientn(colors = rev(rainbow(5)),
-                                                                                    breaks = c(min(dat$density), max(dat$density)),
-                                                                                    labels = c('Low', 'High'),
-                                                                                    name = 'Point density')
+ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
+   scale_color_gradientn(colors = rev(rainbow(5)),
+                         breaks = c(min(dat$density), max(dat$density)),
+                         labels = c('Low', 'High'),
+                         name = 'Point density')
 ```
