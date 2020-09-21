@@ -48,7 +48,7 @@ ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
                          labels = c('Low', 'High'),
                          name   = 'Point density')
 ```
-<img src="Figures/scatter_rainbow_morebins.png" alt="scatter_rainbow_morebins_legend" width="600"/>
+<img src="Figures/scatter_rainbow_morebins_legend.png" alt="scatter_rainbow_morebins_legend" width="600"/>
 
 Finally, you can also change the bandwidth of the kernel with the `h` parameter. Depending on the spread of your data (e.g., if only one small area is densely-populated), this parameter may be helpful in highlighting that.
 ```r
@@ -59,4 +59,4 @@ ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
                          labels = c('Low', 'High'),
                          name   = 'Point density')
 ```
-<img src="Figures/scatter_rainbow_morebins.png" alt="scatter_rainbow_morebins_legend_kernel" width="600"/>
+<img src="Figures/scatter_rainbow_morebins_legend_kernel.png" alt="scatter_rainbow_morebins_legend_kernel" width="600"/>
