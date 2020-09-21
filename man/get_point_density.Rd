@@ -17,12 +17,12 @@ get_point_density(x, y, ...)
 vector
 }
 \description{
-Provided the x,y coordinates of values to be plotted, calculates the density of points on the plot
+Provided the x,y coordinates of values to be plotted, calculates the density of points on the plot. Intended to be used to color points by density.
 }
 \examples{
 
 # load packages
-library(ggplot2); library(scatterplot.point.density)
+library(ggplot2); library(ColorByDensity)
 
 # create sample data.frame
 dat <- data.frame(x = runif(n = 2000), y = runif(n=2000) + rnorm(n=2000))
@@ -32,4 +32,5 @@ col <- get_point_density(x=dat$x, y=dat$y, n=20)
 
 # plot
 ggplot(data = dat) + geom_point(aes(x = x, y = y, color = col)) + scale_color_gradientn(colors = rev(rainbow(5)))
+
 }

@@ -1,5 +1,5 @@
 #' @title get_point_density
-#' @description Provided the x,y coordinates of values to be plotted, calculates the density of points on the plot
+#' @description Provided the x,y coordinates of values to be plotted, calculates the density of points on the plot. Intended to be used to color points by density.
 #' @param x,y vectors containing coordinates of values to be plotted
 #' @param n number of bins for calculating point density
 #' @param ... other arguments passed to specific methods
