@@ -38,5 +38,5 @@ ggplot(data = dat) + geom_point(aes(x, y, color = density)) +
    scale_color_gradientn(colors = rev(rainbow(5)),
                          breaks = c(min(dat$density), max(dat$density)),
                          labels = c('Low', 'High'),
-                         name = 'Point density')
+                         name   = 'Point density')
 ```
