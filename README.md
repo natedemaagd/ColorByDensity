@@ -16,7 +16,7 @@ set.seed(42)
 dat <- data.frame(x = rnorm(5000), y = rnorm(5000))
 ggplot(data = dat) + geom_point(aes(x,y))
 ```
-![Basic scatterplot](Figures/scatter.png)
+![Basic scatterplot](Figures/scatter.png =250x)
 
 A typical strategy for accounting for the overlapping points would be to add an alpha parameter.
 ```r
